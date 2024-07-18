@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aste-App</title>
+    </head>
+    <body>
+        <div id="authentication-container">
+            <div id="login-container">
+                <h1>Login</h1>
+                <form id="login-form">
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="password"
+                        required
+                    />
+                    <button type="submit">Login</button>
+                </form>
+                <br />
+                <button id="show-register-form-btn">Register</button>
+            </div>
+            <div id="register-container" style="display: none">
+                <h1>Register</h1>
+                <form id="register-form">
+                    <input
+                        type="email"
+                        id="register-email"
+                        placeholder="email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="register-password"
+                        placeholder="password"
+                        required
+                    />
+                    <button type="submit">Register</button>
+                </form>
+                <br />
+                <button id="show-login-form-btn">Login</button>
+            </div>
+        </div>
+        <div id="dashboard-container" style="display: none">
+            <div id="dashboard-form">
+                <h1>Dashboard</h1>
+                <form id="auction-item-form">
+                    <input
+                        type="text"
+                        id="item-name"
+                        placeholder="Item Name"
+                        required
+                    />
+                    <input
+                        type="number"
+                        id="item-base-price"
+                        placeholder="Starting Price ($)"
+                        required
+                    />
+                    <button type="submit">Add Item To Auction</button>
+                </form>
+            </div>
+            <ul id="items"></ul>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

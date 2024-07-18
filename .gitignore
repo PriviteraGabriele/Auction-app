@@ -1,0 +1,17 @@
+# Node.js dependencies
+node_modules/
+
+# Generated files by npm
+package-lock.json
+
+# Express.js generated files
+.env
+build/
+dist/
+out/
+
+# Socket.io generated files
+socket.io.js
+
+# Registered Users List
+users.json
