@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+}
+
+#login-container,
+#register-container,
+#dashboard-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button,
+#show-register-form-btn,
+#show-login-form-btn,
+#removeButton,
+#offerButton {
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: #4caf50;
+}
+
+#show-register-form-btn,
+#show-login-form-btn {
+    background-color: #0273f4;
+}
+
+#removeButton {
+    background-color: #ff0000;
+    width: 40%;
+}
+
+#offerButton {
+    background-color: #002aff;
+    width: 40%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+ul li .action-buttons {
+    margin-left: auto; /* Sposta i pulsanti a destra */
+    display: flex; /* Usa Flexbox per allineare i pulsanti */
+}
+
+ul li button#removeButton,
+ul li button#offerButton {
+    padding: 10px 15px; /* Riduci il padding del pulsante */
+    margin-left: 10px; /* Aggiungi un margine tra i pulsanti */
+}
